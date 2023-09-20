@@ -1,0 +1,285 @@
+:root {
+    --cor-site: #fffb19;
+}
+
+
+html {
+    font-family: sans-serif;
+    
+}
+
+.maxWidth {
+    max-width: 90em;
+       
+}
+
+
+.header {
+    text-align: center;
+    margin: auto;
+}
+
+
+.header_logo {
+    width: 9.9em;
+    height: 100%;
+    margin: 1em;
+}
+
+
+.header_nav {
+    background-color: var(--cor-site);
+}
+
+
+ul {
+    margin: 0;
+}
+
+
+.header_nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-size: .8em;
+}
+
+
+.header_nav a {
+    color: #AD0810;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    background-color: #ff8819;
+  
+}
+
+.header_nav a:hover {
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 20%);
+}
+
+
+@media screen and (min-width: 48em) {
+
+    /*768px maior que*/
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .header_logo {
+        margin-left: 2em;
+    }
+
+
+    .header_nav {
+        background-color: initial;
+    }
+
+
+    .header_nav ul {
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+
+    .header_nav li {
+        display: inline-block;
+    }
+
+
+    .header_nav a {
+        color: #AD0810;
+        border-radius: 3px;
+    }
+
+
+    .header_nav a:hover {
+        background-color: color-mix(in srgb, var(--cor-site), #ffffff 80%);
+    }
+}
+
+.trailer {    
+    background-color: #E4F2EB;
+    padding-bottom: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    line-height: 1.5em;
+       
+   
+}
+
+.trailer div {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+
+.trailer_title {
+    margin-top: 0;
+    padding-top: .7em;
+    color: var(--cor-site);
+}
+
+
+.trailer h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+
+.trailer_paragrafo {
+    font-size: 1.1em;
+}
+
+
+.trailer_botao {
+    display: none;
+    margin-top: 1em;
+    padding: 1em 2em;
+    background-color: var(--cor-site);
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #AD0810;
+      
+}
+
+
+.trailer_botao:hover {
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 20%);
+}
+
+.trailer_video{
+    display: none;
+}     
+
+
+@media screen and (min-width: 16em) {
+    .trailer {          
+        background-image: url(../Desafio10/imagens10/fundo.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-color: initial;     
+   }
+  
+    .trailer_botao {
+        background-color: #ff8819;
+        display: inline-block;
+    }
+
+
+    .trailer_paragrafo {
+        margin-bottom: 2em;
+    }
+
+}
+
+
+@media screen and (min-width: 45em){ 
+
+    .trailer_video{            
+       display: block;
+       background-position: center;
+       padding-top: 2em; 
+       padding-bottom: 2em;
+      
+    }
+
+    .trailer_botao{
+        display: none;
+    
+    }
+
+}  
+
+
+.main_content {
+    background-color: #b1f1d1;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+
+.main_content div {
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+
+.main_content_title {
+    color:#AD0810;
+}   
+
+.icon_img {
+    width: 5.5em;
+}
+
+.icon_img:hover{
+    transform: scale(1.1);
+    }
+
+p{
+    font-size: 1.5em;
+}
+  
+
+p1{ 
+    background-color: #ff8819;
+    display: inline-block;
+    margin-top: 1em;
+    padding: 1em 1em;
+    color: #AD0810;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+ }   
+
+p1:hover {    
+    background-color: color-mix(in srgb, var(--cor-site), #ffffff 20%); 
+}   
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.col {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+
+.col-12 {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 48em) {
+
+    /*768px maior que*/
+    .col-6 {
+        width: calc(50% - 2rem);
+    }
+}
+
+
+footer {
+    background-color: #ff8819;
+    color: #AD0810;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+
